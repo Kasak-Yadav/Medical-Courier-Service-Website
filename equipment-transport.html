@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Transport</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #5cb85c;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #449d44;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Equipment Transport</h1>
+        <p>Schedule the secure transport of sensitive medical equipment.</p>
+
+        <form action="/submit_transport_request" method="post">
+            <label for="pickupLocation">Pickup Location:</label>
+            <input type="text" id="pickupLocation" name="pickupLocation" placeholder="Enter Pickup Location" required>
+
+            <label for="deliveryLocation">Delivery Location:</label>
+            <input type="text" id="deliveryLocation" name="deliveryLocation" placeholder="Enter Delivery Location" required>
+
+            <label for="equipmentDetails">Equipment Description:</label>
+            <textarea id="equipmentDetails" name="equipmentDetails" placeholder="Describe the equipment being transported" rows="4" required></textarea>
+
+            <label for="pickupDate">Pickup Date:</label>
+            <input type="date" id="pickupDate" name="pickupDate" required>
+
+            <label for="pickupTime">Pickup Time:</label>
+            <input type="time" id="pickupTime" name="pickupTime" required>
+
+            <button type="submit">Schedule Transport</button>
+        </form>
+    </div>
+</body>
+</html>
