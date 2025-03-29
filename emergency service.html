@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #D9534F;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #D9534F;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #B52B22;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Request Emergency Services</h1>
+        <p>Request immediate, high-priority deliveries for urgent medical needs.</p>
+
+        <form action="/submit_emergency_request" method="post">
+            <label for="pickupLocation">Pickup Location:</label>
+            <input type="text" id="pickupLocation" name="pickupLocation" placeholder="Enter Pickup Location" required>
+
+            <label for="deliveryLocation">Delivery Location:</label>
+            <input type="text" id="deliveryLocation" name="deliveryLocation" placeholder="Enter Delivery Location" required>
+
+            <label for="description">Description of Medical Items:</label>
+            <textarea id="description" name="description" placeholder="Enter details about the items" rows="4" required></textarea>
+
+            <label for="urgency">Level of Urgency:</label>
+            <input type="text" id="urgency" name="urgency" placeholder="High/Medium/Low" required>
+
+            <button type="submit">Submit Emergency Request</button>
+        </form>
+    </div>
+</body>
+</html>
