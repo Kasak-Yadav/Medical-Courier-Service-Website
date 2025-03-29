@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FAQ - Medical Courier Service, answers to common questions about medical deliveries, specimen transportation, and more.">
+    <meta name="author" content="Your Company Name">
+    <title>FAQ - Medical Courier Service</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #333;
+        }
+        .faq-container {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .faq-item h3 {
+            color: #0066cc;
+            cursor: pointer;
+            margin: 0;
+        }
+        .faq-item p {
+            display: none;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #0066cc;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: #ff9900;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Frequently Asked Questions (FAQ)</h1>
+        <p>Everything you need to know about our medical courier services</p>
+    </header>
+
+    <!-- FAQ Section -->
+    <section>
+        <div class="faq-container">
+            <h2>General Information</h2>
+
+            <div class="faq-item">
+                <h3>What types of deliveries do you handle?</h3>
+                <p>We specialize in delivering medical supplies, pharmaceuticals, lab specimens, blood samples, and other sensitive items that require fast, secure, and temperature-controlled transport.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Are your couriers trained for medical deliveries?</h3>
+                <p>Yes, all of our couriers undergo extensive training to handle medical deliveries in compliance with industry standards and regulations. They are well-versed in the safe transport of pharmaceuticals, biological specimens, and medical equipment.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Do you offer temperature-controlled delivery?</h3>
+                <p>Yes, we provide temperature-controlled services for deliveries that require specific temperature conditions such as refrigerated or frozen goods, including medications and biological samples.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I track my shipment?</h3>
+                <p>We provide real-time GPS tracking for all shipments. Once your package is in transit, you will receive a tracking number via email or SMS, which you can use to monitor the delivery progress.</p>
+            </div>
+
+            <h2>Service Area & Availability</h2>
+
+            <div class="faq-item">
+                <h3>What areas do you serve?</h3>
+                <p>We offer courier services across [City/Region], and can accommodate special requests for deliveries to other areas upon arrangement. Please contact us for more information about our service areas.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Are your services available 24/7?</h3>
+                <p>Yes, we provide 24/7 medical courier services to ensure that urgent deliveries are made on time, whenever they are needed.</p>
+            </div>
+
+            <h2>Pricing & Payment</h2>
+
+            <div class="faq-item">
+                <h3>How are your prices determined?</h3>
+                <p>Our pricing is based on factors such as distance, urgency, delivery type (e.g., temperature-controlled), and the size/weight of the package. We offer customized quotes based on your specific needs. Contact us for a detailed price estimate.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What payment methods do you accept?</h3>
+                <p>We accept all major credit cards, bank transfers, and PayPal. Invoices are issued upon request for medical facilities and regular clients.</p>
+            </div>
+
+            <h2>Safety & Security</h2>
+
+            <div class="faq-item">
+                <h3>How do you ensure the safety of my items?</h3>
+                <p>We follow strict guidelines to ensure that all medical deliveries are secure, including temperature monitoring, tamper-evident packaging, and compliance with regulatory standards. All of our drivers are background-checked and trained to handle sensitive medical items securely.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What happens if my package is delayed?</h3>
+                <p>While we strive to make every delivery on time, in case of any unforeseen delays, we will promptly notify you and provide an estimated delivery update. We take responsibility for any delays and work to resolve issues as quickly as possible.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; [Current Year] [Your Company Name]. All rights reserved.</p>
+        <p>For inquiries, contact us at <a href="mailto:contact@yourcompany.com">contact@yourcompany.com</a></p>
+    </footer>
+
+    <script>
+        // JavaScript to toggle FAQ answers
+        const faqItems = document.querySelectorAll('.faq-item h3');
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                const isVisible = answer.style.display === 'block';
+                answer.style.display = isVisible ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>
